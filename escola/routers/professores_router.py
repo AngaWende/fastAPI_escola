@@ -2,16 +2,12 @@ import sqlite3
 
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
+from shared.database import get_db
 
 
 router = APIRouter(prefix='/professores')
 
-def get_db():
-    conn = sqlite3.connect("shared/escola.db")
-    try:
-        yield conn
-    finally:
-        conn.close()
+
 
 class Professor(BaseModel):
     nome: str
@@ -39,13 +35,13 @@ def add_professor(prof: Professor, conn: sqlite3.Connection = Depends(get_db)):
         cursor.close()
 
 @router.delete('/excluir_professor')
-def excluir_professor(prof: Professor, conn: sqlite3.Connection = Depends(get_db)):
+def excluir_professor(nome, conn: sqlite3.Connection = Depends(get_db)):
     cursor = conn.cursor()
     try:
-        dados = (prof.nome,)
+        dados = (nome,)
         cursor.execute('delete from professores where nome = (?)', dados)
         conn.commit()
-        return {"Professor excluído": prof.nome}
+        return {"Professor excluído": nome}
     except sqlite3.Error as e:
         raise HTTPException(status_code=500, detail=f"Database error: {e}")
     finally:

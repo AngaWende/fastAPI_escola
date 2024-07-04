@@ -1,16 +1,10 @@
-import sqlite3
-
+import sqlite3, os
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
+from shared.database import get_db
+
 
 router = APIRouter(prefix='/alunos')
-
-def get_db():
-    conn = sqlite3.connect("shared/escola.db")
-    try:
-        yield conn
-    finally:
-        conn.close()
 
 
 class AlunoResponse(BaseModel):

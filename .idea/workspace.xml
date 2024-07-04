@@ -4,30 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ca543d54-2a81-464a-a03c-dd0927ea543c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fastAPI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/models/escola_model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/routers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/routers/alunos_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/routers/cursos_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/routers/escola_router.py" afterDir="false" />
+    <list default="true" id="ca543d54-2a81-464a-a03c-dd0927ea543c" name="Changes" comment="classes e atribuições separadas em arquivos distintos">
       <change afterPath="$PROJECT_DIR$/escola/routers/matricula_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/escola/routers/professores_router.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/escola/routers/vincular_professor_router.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/shared/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/escola.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/contas_a_pagar_e_receber/routers/test_contas_a_pagar_e_receber_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/escola/routers/test_alunos_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/escola/routers/test_cursos_router.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/escola/routers/test_professores_router.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/teste.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escola/routers/alunos_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/escola/routers/alunos_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escola/routers/cursos_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/escola/routers/cursos_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/escola/routers/professores_router.py" beforeDir="false" afterPath="$PROJECT_DIR$/escola/routers/professores_router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shared/escola.db" beforeDir="false" afterPath="$PROJECT_DIR$/shared/escola.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +34,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AngaWende&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AngaWende/fastAPI_escola.git&quot;,
+    &quot;accountId&quot;: &quot;904db43c-4beb-4936-a801-758a7b2f13fb&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -55,19 +57,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python tests.Python tests for test_contas_a_pagar_e_receber_router.test_deve_listar_contas_a_pagar_e_receber.executor&quot;: &quot;Run&quot;,
-    &quot;Python.contas_a_pagar_e_receber_router.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.teste.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;raiz&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lucas/PycharmProjects/fastAPI/fastAPI/contas_a_pagar_e_receber/models&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python tests.Python tests for test_alunos_router.test_add_aluno.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_add_e_del_aluno.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_deletar_aluno.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_deve_criar_contas_a_pagar_e_receber.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_home.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_lista_de_alunos.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_listar_alunos.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.test_listar_cursos.executor": "Run",
+    "Python tests.Python tests for test_alunos_router.testando_add_e_del_aluno.executor": "Run",
+    "Python tests.Python tests for test_contas_a_pagar_e_receber_router.test_deve_listar_contas_a_pagar_e_receber.executor": "Run",
+    "Python tests.Python tests for test_contas_a_pagar_e_receber_router.test_listar_alunos.executor": "Run",
+    "Python tests.Python tests for test_cursos_router.test_add_curso.executor": "Run",
+    "Python tests.Python tests for test_cursos_router.test_deletar_curso.executor": "Run",
+    "Python tests.Python tests for test_cursos_router.test_listar_cursos.executor": "Run",
+    "Python tests.Python tests for test_professores_router.test_add_professor.executor": "Run",
+    "Python tests.Python tests for test_professores_router.test_deletar_professor.executor": "Run",
+    "Python tests.Python tests for test_professores_router.test_listar_professores.executor": "Run",
+    "Python tests.Python tests in test_alunos_router.py.executor": "Run",
+    "Python tests.Python tests in test_cursos_router.py.executor": "Run",
+    "Python tests.Python tests in test_professores_router.py.executor": "Run",
+    "Python.contas_a_pagar_e_receber_router.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.teste.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "raiz",
+    "last_opened_file_path": "/home/lucas/PycharmProjects/fastAPI/fastAPI/contas_a_pagar_e_receber/models"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/contas_a_pagar_e_receber/models" />
@@ -77,124 +98,104 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.teste">
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests in test_professores_router.py">
+    <configuration name="Python tests for test.escola.routers.test_alunos_router" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="fastAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/shared" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/shared/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test.escola.routers.test_alunos_router&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="escola_router" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_professores_router.test_add_professor" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="fastAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/contas_a_pagar_e_receber/routers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/contas_a_pagar_e_receber/routers/escola_router.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_professores_router.test_add_professor&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_professores_router.test_deletar_professor" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="fastAPI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fastAPI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/.venv" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/.venv/main2.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="teste" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fastAPI" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/teste.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_professores_router.test_deletar_professor&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_professores_router.test_listar_professores" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fastAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_professores_router.test_listar_professores&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_cursos_router.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fastAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/escola/routers/test_cursos_router.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_professores_router.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="fastAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test/escola/routers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test/escola/routers/test_professores_router.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.teste" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.main2" />
-        <item itemvalue="Python.database" />
-        <item itemvalue="Python.escola_router" />
+        <item itemvalue="Python tests.Python tests in test_professores_router.py" />
+        <item itemvalue="Python tests.Python tests for test_professores_router.test_deletar_professor" />
+        <item itemvalue="Python tests.Python tests for test_professores_router.test_add_professor" />
+        <item itemvalue="Python tests.Python tests for test_professores_router.test_listar_professores" />
+        <item itemvalue="Python tests.Python tests in test_cursos_router.py" />
       </list>
     </recent_temporary>
   </component>
@@ -214,6 +215,19 @@
       <option name="presentableId" value="Default" />
       <updated>1718984209028</updated>
     </task>
+    <task id="LOCAL-00001" summary="classes e atribuições separadas em arquivos distintos">
+      <option name="closed" value="true" />
+      <created>1720036789287</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1720036789287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="classes e atribuições separadas em arquivos distintos" />
+    <option name="LAST_COMMIT_MESSAGE" value="classes e atribuições separadas em arquivos distintos" />
   </component>
 </project>
